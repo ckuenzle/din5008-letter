@@ -4,7 +4,7 @@
 \RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{graphicx}
-\RequirePackage{csquotes}
+\RequirePackage[german=guillemets]{csquotes}
 \RequirePackage{hyperref}
 %\hypersetup{pdfpagemode=None}
 \KOMAoptions{
