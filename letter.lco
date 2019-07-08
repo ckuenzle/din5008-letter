@@ -1,0 +1,55 @@
+\ProvidesFile{letter.lco}[2019-07-08]
+\RequirePackage[ngerman]{babel}
+\RequirePackage{fix-cm}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{graphicx}
+\RequirePackage{csquotes}
+\RequirePackage{hyperref}
+%\hypersetup{pdfpagemode=None}
+\KOMAoptions{
+        paper=a4,
+        pagenumber=botcenter,
+        fromalign=right,
+        fromrule=afteraddress,
+        fromphone,
+%        fromfax,
+        fromlogo,
+%        fromurl,
+        fromemail,
+        backaddress,
+        foldmarks,
+%        headsepline,
+%        footsepline,
+        enlargefirstpage
+}
+\setkomavar{fromname}{Max Mustermann}
+\setkomavar{fromaddress}{Musterstraße~17\\12345 Musterstadt}
+\setkomavar{fromphone}{+49\,(0)\,111\,0000000}
+%\setkomavar{fromfax}{+49\,(0)\,555\,12345}
+\setkomavar{fromemail}{mail@example.com}
+\setkomavar{emailseparator}[E-Mail]{: }
+%\setkomavar{fromurl}{\url{//www.example.com}}
+%\setkomavar{urlseparator}[]{}
+\setkomavar{backaddressseparator}{~{$\vcenter{\hbox{\scalebox{0.5}{$\bullet$}}}$} }
+\setkomavar{frombank}{Musterbank~AG\\IBAN:~DE00\,0000\,0000\,0000\,0000\,00\\BIC:~MUBADEAB000}
+\setkomavar{place}{Musterstadt}
+\renewcommand*{\raggedsignature}{\raggedright}
+\setkomavar{fromlogo}{\parbox[b]{8cm}{\usekomafont{fromaddress}
+    {\mbox{\LARGE \bfseries Max Mustermann}}
+    \smallskip}
+}
+%\setkomafont{backaddress}{\sffamily}
+\setkomafont{fromaddress}{\sffamily}
+\setkomafont{fromname}{\sffamily}
+\addtokomafont{fromname}{\scriptsize}
+\addtokomafont{fromaddress}{\scriptsize}
+\pagestyle{headings}
+
+% Comment out the following block to hide the bank details
+\setkomavar{firstfoot}{
+    \begin{center}
+        \scriptsize{\textsf{Bankverbindung: \def\\{\usekomavar{backaddressseparator}}
+        \usekomavar{frombank}}}
+    \end{center}
+}
