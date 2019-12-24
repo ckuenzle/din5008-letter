@@ -1,4 +1,4 @@
-\ProvidesFile{letter.lco}[2019-07-08]
+\ProvidesFile{letter.lco}[2019-12-24]
 \RequirePackage[ngerman]{babel}
 \RequirePackage{fix-cm}
 \RequirePackage[T1]{fontenc}
@@ -32,8 +32,8 @@
 %\setkomavar{fromurl}{\url{//www.example.com}}
 %\setkomavar{urlseparator}[]{}
 \setkomavar{backaddressseparator}{~{$\vcenter{\hbox{\scalebox{0.5}{$\bullet$}}}$} }
-\setkomavar{frombank}{Musterbank~AG\\IBAN:~DE00\,0000\,0000\,0000\,0000\,00\\BIC:~MUBADEAB000}
-\setkomavar{place}{Musterstadt}
+\setkomavar{frombank}{Musterbank~AG\\IBAN~DE00\,0000\,0000\,0000\,0000\,00\\BIC~MUBADEAB000}
+%\setkomavar{place}{Musterstadt}
 \renewcommand*{\raggedsignature}{\raggedright}
 \setkomavar{fromlogo}{\parbox[b]{8cm}{\usekomafont{fromaddress}
     {\mbox{\LARGE \bfseries Max Mustermann}}
