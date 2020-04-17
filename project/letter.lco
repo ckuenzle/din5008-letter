@@ -1,4 +1,4 @@
-\ProvidesFile{letter.lco}[2019-12-24]
+\ProvidesFile{letter.lco}[2020-04-18]
 \RequirePackage[ngerman]{babel}
 \RequirePackage{fix-cm}
 \RequirePackage[T1]{fontenc}
@@ -25,9 +25,9 @@
 }
 \setkomavar{fromname}{Max Mustermann}
 \setkomavar{fromaddress}{Musterstraße~17\\12345 Musterstadt}
-\setkomavar{fromphone}{+49\,(0)\,111\,0000000}
-%\setkomavar{fromfax}{+49\,(0)\,555\,12345}
-\setkomavar{fromemail}{mail@example.com}
+\setkomavar{fromphone}{\href{tel:+49-111-0000000}{+49\,(0)\,111\,0000000}}
+%\setkomavar{fromfax}{\href{tel:+49-555-12345}{+49\,(0)\,555\,12345}}
+\setkomavar{fromemail}{\href{mailto:mail@example.com}{mail@example.com}}
 \setkomavar{emailseparator}[E-Mail]{: }
 %\setkomavar{fromurl}{\url{//www.example.com}}
 %\setkomavar{urlseparator}[]{}
