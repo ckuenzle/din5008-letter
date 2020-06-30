@@ -5,7 +5,8 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{graphicx}
 \RequirePackage[german=guillemets]{csquotes}
-\RequirePackage{hyperref}
+\RequirePackage[hidelinks]{hyperref}
+\RequirePackage{enumitem}
 %\hypersetup{pdfpagemode=None}
 \KOMAoptions{
         paper=a4,
